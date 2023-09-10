@@ -1,0 +1,28 @@
+.footer-container{
+    margin-top: 80px;
+    visibility: visible;
+    animation-delay: 0.1s;
+    animation-name: fadeIn;
+    background: url(../../images/footer.png) center center no-repeat, rgb(71, 54, 4);
+    // background-size: contain;
+}
+
+
+.icons-footer{
+    border-top: solid 1px white!important;
+    
+  
+}
+
+ul{
+    list-style-type: none;
+}
+h4{
+    color: #d1aa34
+     !important
+}
+
+.img-icon-footer{
+ width: 20px;
+
+}
