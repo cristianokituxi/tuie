@@ -53,7 +53,7 @@ const Menu = () => {
           <Navbar.Brand href="/">
             <img
               src={logo}
-              width="100"
+              width="80"
               height="50"
               className="d-inline-block align-top"
               alt="React Bootstrap logo"
@@ -67,7 +67,7 @@ const Menu = () => {
             <Nav.Link href="../#quem-somos"> Quem somos </Nav.Link>
             <Nav.Link href="/ajuda">Ajuda</Nav.Link>
             <Button className="rounded-pill" variant="success">
-              Baixe o app  {''}
+              Baixe o app {""}
               <FaDownload />
             </Button>
           </Navbar.Collapse>
