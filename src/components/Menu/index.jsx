@@ -4,7 +4,7 @@ import { FaDownload } from "react-icons/fa";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import logo from "../../images/icone.jpg";
+import logo from "../../images/icon.png";
 
 import "./style.scss";
 import Button from "react-bootstrap/Button";
