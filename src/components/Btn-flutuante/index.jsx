@@ -28,7 +28,7 @@ const BotaoFlutuante = () => {
       <a
         target="_blank"
         id="icon"
-        href="https://wa.me/556596276197?text=ol%C3%A1%21+gostaria+de+agendar+uma+consulta"
+        href="https://wa.me/244926024456?text=ol%C3%A1%21+gostaria+de+uma+ajuda+referente a ..."
       >
         <img src={icon3} alt="icone do whatssap" />
       </a>
