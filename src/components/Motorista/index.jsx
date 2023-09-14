@@ -54,10 +54,11 @@ const Motorista = () => {
               <p className="text-center">
                 Faça o seu horário, seja o seu próprio chefe
               </p>
-              <Carousel activeIndex={index} onSelect={handleSelect}>
-                <Carousel.Item>
-                  <img src={img2} className="d-block w-100 mb-3 rounded" />
-                </Carousel.Item>
+              <Carousel
+                activeIndex={index}
+                onSelect={handleSelect}
+                controls={false}
+              >
                 <Carousel.Item>
                   <img
                     width="100"
