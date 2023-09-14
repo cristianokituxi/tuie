@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import BotaoFlutuante from "../components/Btn-flutuante";
 import "./index.scss";
 import Inicio from "../components/Inicio";
+import Motorista from "../components/Motorista";
 
 const IndexPage = () => {
   return (
@@ -12,6 +13,7 @@ const IndexPage = () => {
       <div className="container-pages">
         <Menu />
         <Inicio />
+        <Motorista />
         <BotaoFlutuante />
         <Footer />
       </div>
