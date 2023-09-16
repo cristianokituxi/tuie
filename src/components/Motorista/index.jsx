@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import img1 from "../../images/motorista.png";
 import img2 from "../../images/retrato-de-senhora-afro-americana-positiva-dentro-do-carro.jpg";
 import img3 from "../../images/motorista-uber-elegante-dando-corrida-de-taxi.jpg";
@@ -16,8 +16,11 @@ import { Reveal } from "../../utils/delayEfect";
 const Motorista = () => {
   const [index, setIndex] = useState(0);
 
-  window.addEventListener("scroll", Reveal);
-
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", Reveal);
+    }
+  }, []);
   const handleSelect = (selectedIndex) => {
     setIndex(selectedIndex);
   };
