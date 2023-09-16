@@ -5,6 +5,7 @@ import img3 from "../../images/motorista-uber-elegante-dando-corrida-de-taxi.jpg
 import img4 from "../../images/driverpic.jpeg";
 import { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
+import Alert from "react-bootstrap/Alert";
 
 import { Row, Col, Stack } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
@@ -32,7 +33,10 @@ const Motorista = () => {
                 data-wow-delay="0.1s"
                 Style="visibility: visible; animation-delay: 0.1s; animation-name: zoomIn;"
               >
-                <div className="bg-warning w-100 p-2 py-5 rounded">
+                <div
+                  className="w-100 p-2 py-5 rounded"
+                  Style="background-color: #ff8c00 "
+                >
                   <h2 className="text-light p-2">
                     <b>Vamos-lá!!!</b>
                   </h2>
@@ -90,6 +94,17 @@ const Motorista = () => {
                   />
                 </Carousel.Item>
               </Carousel>
+              <Alert Style="background-color: #ff8c00 ">
+                <Alert.Heading className="text-white text-center">
+                  {" "}
+                  PARA CONDUTORES PARCEIROS
+                </Alert.Heading>
+                <hr />
+                <p className="text-white  text-center">
+                  Informações sobre a aplicação do motorista, pagamentos,
+                  questões relacionadas com as viagens, etc.
+                </p>
+              </Alert>
               <div className="text-center">
                 <Stack gap={2} className="col-md-5 mx-auto pb-3">
                   <Button href="/sobre-a-clinica" variant="success">
