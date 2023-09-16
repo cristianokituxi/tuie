@@ -10,16 +10,19 @@ import { Row, Col, Stack } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import "./style.scss";
 import { FaDownload } from "react-icons/fa";
+import { Reveal } from "../../utils/delayEfect";
 
 const Motorista = () => {
   const [index, setIndex] = useState(0);
+
+  window.addEventListener("scroll", Reveal);
 
   const handleSelect = (selectedIndex) => {
     setIndex(selectedIndex);
   };
   return (
     <>
-      <div id="motorista" className="container-motorista">
+      <div id="motorista" className="container-motorista reveal">
         <div className="container container-md d-flex justify-content-around">
           <Row>
             <Col md={4} xs={12}>
