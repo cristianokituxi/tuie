@@ -47,7 +47,7 @@ const Inicio = () => {
                 elevamos a mais alto padrão do conforto em sua viagem. O seu
                 destino é a nossa missão.
               </p>
-              <Stack gap={2} className="col-md-5 mx-auto pb-3">
+              <Stack gap={2} className="col-md-12 mx-auto pb-3">
                 <Button href="/sobre-a-clinica" variant="success">
                   Download
                 </Button>

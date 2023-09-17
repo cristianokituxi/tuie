@@ -103,7 +103,7 @@ const Motorista = () => {
                 </p>
               </Alert>
               <div className="text-center">
-                <Stack gap={2} className="col-md-5 mx-auto pb-3">
+                <Stack gap={2} className="col-md-12 mx-auto pb-3">
                   <Button href="/sobre-a-clinica" variant="success">
                     Baixe agora o app {}
                     <FaDownload />
