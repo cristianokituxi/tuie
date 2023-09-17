@@ -7,7 +7,7 @@ import "./style.scss";
 
 const Inicio = () => {
   return (
-    <div id="inicio" className="container-inicio">
+    <div id="inicio" className="container-inicio ">
       <div className="container container-md d-flex justify-content-around">
         <Row>
           <Col xs={12} md={5}>

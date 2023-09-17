@@ -1,8 +1,8 @@
 import React from "react";
-import img1 from "../../images/motorista.png";
-import img2 from "../../images/retrato-de-senhora-afro-americana-positiva-dentro-do-carro.jpg";
-import img3 from "../../images/motorista-uber-elegante-dando-corrida-de-taxi.jpg";
-import img4 from "../../images/driverpic.jpeg";
+import img1 from "../../images/passageiro.png";
+import img2 from "../../images/african-american-business-man-car.jpg";
+import img3 from "../../images/homem-bonito-e-elegante-em-um-salao-de-carro.jpg";
+import img4 from "../../images/feche-amigos-sorridentes-dentro-do-carro.jpg";
 import { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import Alert from "react-bootstrap/Alert";
@@ -12,7 +12,7 @@ import Button from "react-bootstrap/Button";
 import "./style.scss";
 import { FaDownload } from "react-icons/fa";
 
-const Motorista = () => {
+const Passageiro = () => {
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex) => {
@@ -20,11 +20,11 @@ const Motorista = () => {
   };
   return (
     <>
-      <div id="motorista" className="container-motorista reveal">
+      <div id="motorista" className="container-Passageiro reveal">
         <div className="container container-md d-flex justify-content-around">
           <Row>
             <Col md={4} xs={12}>
-              <h2 className="text-center">Motorista</h2>
+              <h2 className="text-center">Passageiro</h2>
               <div
                 className="text-center wow zoomIn"
                 data-wow-delay="0.1s"
@@ -38,9 +38,7 @@ const Motorista = () => {
                     <b>Vamos-lá!!!</b>
                   </h2>
 
-                  <p className="text-light p-2">
-                    Instale a APP e faça dinheiro.
-                  </p>
+                  <p className="text-light p-2">Instale a APP e viaje.</p>
                   <img
                     className="img-fluid wow zoomIn w-75"
                     data-wow-delay="0.5s"
@@ -53,10 +51,11 @@ const Motorista = () => {
 
             <Col className="mt-2">
               <h3 className="text-center">
-                <b>Ganhe dinheiro a conduzir</b>
+                <b>Uma viagem em poucos minutos!</b>
               </h3>
               <p className="text-center">
-                Faça o seu horário, seja o seu próprio chefe
+                Escreve o teu destino, chama uma Tuié, espera pelo motorista e
+                aproveita a viagem.
               </p>
               <Carousel
                 activeIndex={index}
@@ -67,7 +66,7 @@ const Motorista = () => {
                   <img
                     width="100"
                     // height="50"
-                    alt="foto-motorista"
+                    alt="foto-Passageiro"
                     src={img3}
                     className="d-block w-100 mb-3 rounded"
                   />
@@ -76,7 +75,7 @@ const Motorista = () => {
                   <img
                     width="100"
                     // height="50"
-                    alt="foto-motorista"
+                    alt="foto-Passageiro"
                     src={img2}
                     className="d-block w-100 mb-3 rounded"
                   />
@@ -85,7 +84,7 @@ const Motorista = () => {
                   <img
                     width="100"
                     // height="50"
-                    alt="foto-motorista"
+                    alt="foto-Passageiro"
                     src={img4}
                     className="d-block w-100 mb-3 rounded"
                   />
@@ -94,12 +93,12 @@ const Motorista = () => {
               <Alert Style="background-color: #ff8c00 ">
                 <Alert.Heading className="text-white text-center">
                   {" "}
-                  PARA CONDUTORES PARCEIROS
+                  PARA PASSAGEIROS
                 </Alert.Heading>
                 <hr />
                 <p className="text-white  text-center">
-                  Informações sobre a aplicação do motorista, pagamentos,
-                  questões relacionadas com as viagens, etc.
+                  Guia detalhado e Informações sobre a aplicação, conta e
+                  viagens.
                 </p>
               </Alert>
               <div className="text-center">
@@ -117,4 +116,4 @@ const Motorista = () => {
     </>
   );
 };
-export default Motorista;
+export default Passageiro;
