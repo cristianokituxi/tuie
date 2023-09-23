@@ -11,6 +11,7 @@ import { useEffect } from "react";
 import SectionMix from "../components/Section-mix";
 import Passageiro from "../components/Passegeiro";
 import SectionPassageiro from "../components/Section-passageiro";
+import SectionTuie from "../components/Section-tuie";
 
 const IndexPage = () => {
   useEffect(() => {
@@ -27,6 +28,7 @@ const IndexPage = () => {
         <SectionMix />
         <Passageiro />
         <SectionPassageiro />
+        <SectionTuie />
         <BotaoFlutuante />
         <Footer />
       </div>
@@ -36,4 +38,4 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <title>Tuié comigo|Transportes </title>;
+export const Head = () => <title>Tuié comigo | Transportes </title>;
